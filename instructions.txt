@@ -1,1 +1,12 @@
 https://flowbite.com/docs/components/navbar/ -> site flowbite
+
+Estrutura do portfolio:
+
+Na seção inicio alem de apresentação incial e sucinta tambem por as habilidades em dados e em desenvolvimento
+
+Em projetos, deve ser apresentado os projetos concluidos e em andamentos
+
+Em impacto apresentar da melhor forma a Estrutura digital DataStudent estatisticas, relatos de usuarios satisfeitos e +++
+
+Por fim seção Conquistas para certificados, Reconhecimentos, Estudos e etc...
+--> ONE, Enap, EFSET.
