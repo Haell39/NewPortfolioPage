@@ -15,10 +15,17 @@ OBS: Seção DataStudent---
 
 Analisar por uma seção nav DataStudent no portifólio mostrando images do canal e postagens e explicando o objetivo que é pra criar uma estrutura digital pra meus projetos e listar esses projetos profissional extensos WebApps e saas... Pelo menos 1 desses profissionais em desenvolvimento!
 
-Porno portifólio num domínio próprio ou vercell analisar
+Por no portifólio num domínio próprio ou vercell analisar
 
 incluir comentário de seguidores nos posts e nas conversas internacionais!!!!! um carrossel ou algo do tipo
 
 Incluir Google sites datastudent e expandir por aí, como se fosse um blog de conteúdos mas também como um hub de conteúdos !! O objetivo permanece o msms é o de gerar impacto e de promover meus produtos WebApps saas etc...
 
 << OBS Seção projetos: Pesquisar onde deployar relatorios MD dos projetos de dados, onde deployar os visuais excels power bi sql etc...e tbm os visuais ipython
+
+
+<h2
+          class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white py-1"
+        >
+          🗂️ Meus Projetos
+        </h2>

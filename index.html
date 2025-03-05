@@ -272,184 +272,233 @@
     </section>
 
     <!-- Segundo Titulo Projetos -->
-    <section id="projects" class="bg-white dark:bg-gray-900">
-      <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-12">
-        <!-- Cabeçalho da seção -->
+    <!-- Seção de Projetos -->
+    <section id="projects" class="bg-white dark:bg-gray-900 py-12">
+      <div class="max-w-screen-xl mx-auto px-4">
         <h2
-          class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white"
+          class="mb-10 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white"
         >
           🗂️ Meus Projetos
         </h2>
-        <p
-          class="mb-12 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400"
+
+        <!-- Grid ajustada -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-10 px-4 sm:px-0"
         >
-          Esses são meus projetos produzidos na área de Ciência de Dados e
-          Desenvolvimento web:
-        </p>
-        <br />
-
-        <!-- Grid de Projetos -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <!-- Projeto 1: Ciência de Dados -->
-          <div class="bg-white rounded-lg shadow-md p-6 dark:bg-gray-800">
-            <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">
-              Análise de Dados de Vendas
-            </h3>
-            <p class="text-gray-700 dark:text-gray-300 mb-4">
-              Um projeto de análise exploratória de dados usando Python, Pandas
-              e Power BI para identificar padrões de vendas e insights de
-              negócios.
-            </p>
-            <div class="flex space-x-2 mb-4">
-              <span
-                class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800"
-              >
-                Python
-              </span>
-              <span
-                class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800"
-              >
-                Power BI
-              </span>
-              <span
-                class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800"
-              >
-                SQL
-              </span>
-            </div>
-            <div class="flex space-x-4">
-              <a
-                href="#"
-                class="text-blue-600 hover:underline dark:text-blue-500 font-medium"
-              >
-                Ver código <i class="fa-solid fa-code ml-1"></i>
-              </a>
-              <a
-                href="#"
-                class="text-blue-600 hover:underline dark:text-blue-500 font-medium"
-              >
-                Ver Relatório <i class="fa-solid fa-globe ml-1"></i>
-              </a>
+          <!-- Projeto 1 -->
+          <div
+            class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 transition-all hover:scale-[1.02]"
+          >
+            <div class="flex flex-col h-full">
+              <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                💰 Controle de Gastos
+              </h3>
+              <p class="text-gray-600 dark:text-gray-300 mb-4 flex-grow">
+                Sistema que permite cadastrar pessoas, criar transações
+                financeiras e acompanhar seus gastos em uma interface simples.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <!-- Tags mantidas -->
+                <span
+                  class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-lg dark:bg-blue-900 dark:text-blue-300"
+                  >HTML</span
+                >
+                <span
+                  class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-lg dark:bg-blue-900 dark:text-blue-300"
+                  >CSS</span
+                >
+                <span
+                  class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-lg dark:bg-blue-900 dark:text-blue-300"
+                  >React</span
+                >
+                <span
+                  class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-lg dark:bg-blue-900 dark:text-blue-300"
+                  >FastAPI</span
+                >
+                <span
+                  class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-lg dark:bg-blue-900 dark:text-blue-300"
+                  >MongoDB</span
+                >
+              </div>
+              <div class="mt-auto">
+                <a
+                  href="https://github.com/Haell39/controle-financeiro_FARM-Stack"
+                  class="inline-flex items-center font-medium text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 transition-colors"
+                  target="_blank"
+                >
+                  Ver Código
+                </a>
+              </div>
             </div>
           </div>
 
-          <!-- Projeto 2: Ciência de Dados -->
-          <div class="bg-white rounded-lg shadow-md p-6 dark:bg-gray-800">
-            <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">
-              Previsão de Churn
-            </h3>
-            <p class="text-gray-700 dark:text-gray-300 mb-4">
-              Modelo de machine learning construído com Scikit-learn para prever
-              a rotatividade de clientes, integrado com Jupyter Notebook.
-            </p>
-            <div class="flex space-x-2 mb-4">
-              <span
-                class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800"
-              >
-                Python
-              </span>
-              <span
-                class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800"
-              >
-                Scikit-learn
-              </span>
-            </div>
-            <div class="flex space-x-4">
-              <a
-                href="#"
-                class="text-blue-600 hover:underline dark:text-blue-500 font-medium"
-              >
-                Ver código <i class="fa-solid fa-code ml-1"></i>
-              </a>
-              <a
-                href="#"
-                class="text-blue-600 hover:underline dark:text-blue-500 font-medium"
-              >
-                Ver website <i class="fa-solid fa-globe ml-1"></i>
-              </a>
-            </div>
-          </div>
-
-          <!-- Projeto 3: Desenvolvimento Web -->
-          <div class="bg-white rounded-lg shadow-md p-6 dark:bg-gray-800">
-            <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">
-              Portfólio Pessoal
-            </h3>
-            <p class="text-gray-700 dark:text-gray-300 mb-4">
-              Este site! Desenvolvido com Tailwind CSS, Flowbite e JavaScript
-              para exibir meus projetos e habilidades.
-            </p>
-            <div class="flex space-x-2 mb-4">
-              <span
-                class="inline-block bg-green-100 text-green-800 text-sm font-semibold px-2.5 py-0.5 rounded dark:bg-green-200 dark:text-green-800"
-              >
-                Tailwind CSS
-              </span>
-              <span
-                class="inline-block bg-green-100 text-green-800 text-sm font-semibold px-2.5 py-0.5 rounded dark:bg-green-200 dark:text-green-800"
-              >
-                JavaScript
-              </span>
-            </div>
-            <div class="flex space-x-4">
-              <a
-                href="#"
-                class="text-blue-600 hover:underline dark:text-blue-500 font-medium"
-              >
-                Ver código <i class="fa-solid fa-code ml-1"></i>
-              </a>
-              <a
-                href="#"
-                class="text-blue-600 hover:underline dark:text-blue-500 font-medium"
-              >
-                Ver website <i class="fa-solid fa-globe ml-1"></i>
-              </a>
+          <!-- Projeto 2 -->
+          <div
+            class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 transition-all hover:scale-[1.02]"
+          >
+            <div class="flex flex-col h-full">
+              <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                📈 HR Analytics
+              </h3>
+              <p class="text-gray-600 dark:text-gray-300 mb-4 flex-grow">
+                Predição de Rotatividade de Funcionários para Retenção
+                Estratégica. Base de dados de uma empresa multinacional.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <!-- Tags mantidas -->
+                <span
+                  class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-lg dark:bg-green-900 dark:text-green-300"
+                  >Python</span
+                >
+                <span
+                  class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-lg dark:bg-green-900 dark:text-green-300"
+                  >Pandas</span
+                >
+                <span
+                  class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-lg dark:bg-green-900 dark:text-green-300"
+                  >Scikit-learn</span
+                >
+                <span
+                  class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-lg dark:bg-green-900 dark:text-green-300"
+                  >NumPy</span
+                >
+                <span
+                  class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-lg dark:bg-green-900 dark:text-green-300"
+                  >Matplotlib</span
+                >
+              </div>
+              <div class="flex gap-4 mt-auto">
+                <a
+                  href="https://github.com/Haell39/HR-Analytics"
+                  class="inline-flex items-center font-medium text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 transition-colors"
+                  target="_blank"
+                >
+                  Ver Código
+                </a>
+                <a
+                  href="https://github.com/Haell39/HR-Analytics/blob/main/Relatorio.md"
+                  class="inline-flex items-center font-medium text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 transition-colors"
+                  target="_blank"
+                >
+                  Ver Relatório
+                </a>
+              </div>
             </div>
           </div>
-
-          <!-- Projeto 4: Desenvolvimento Web -->
-          <div class="bg-white rounded-lg shadow-md p-6 dark:bg-gray-800">
-            <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">
-              Aplicativo de Tarefas
-            </h3>
-            <p class="text-gray-700 dark:text-gray-300 mb-4">
-              Um app de lista de tarefas com React e MongoDB, permitindo criar,
-              editar e excluir tarefas em tempo real.
-            </p>
-            <div class="flex space-x-2 mb-4">
-              <span
-                class="inline-block bg-green-100 text-green-800 text-sm font-semibold px-2.5 py-0.5 rounded dark:bg-green-200 dark:text-green-800"
-              >
-                React
-              </span>
-              <span
-                class="inline-block bg-green-100 text-green-800 text-sm font-semibold px-2.5 py-0.5 rounded dark:bg-green-200 dark:text-green-800"
-              >
-                MongoDB
-              </span>
-            </div>
-            <div class="flex space-x-4">
-              <a
-                href="#"
-                class="text-blue-600 hover:underline dark:text-blue-500 font-medium"
-              >
-                Ver código <i class="fa-solid fa-code ml-1"></i>
-              </a>
-              <a
-                href="#"
-                class="text-blue-600 hover:underline dark:text-blue-500 font-medium"
-              >
-                Ver website <i class="fa-solid fa-globe ml-1"></i>
-              </a>
+          <!-- Projeto 3 -->
+          <div
+            class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 transition-all hover:scale-[1.02]"
+          >
+            <div class="flex flex-col h-full">
+              <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                HR Analytics
+              </h3>
+              <p class="text-gray-600 dark:text-gray-300 mb-4 flex-grow">
+                Predição de Rotatividade de Funcionários para Retenção
+                Estratégica. Base de dados de uma empresa multinacional.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <!-- Tags mantidas -->
+                <span
+                  class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-lg dark:bg-green-900 dark:text-green-300"
+                  >Python</span
+                >
+                <span
+                  class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-lg dark:bg-green-900 dark:text-green-300"
+                  >Pandas</span
+                >
+                <span
+                  class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-lg dark:bg-green-900 dark:text-green-300"
+                  >Scikit-learn</span
+                >
+                <span
+                  class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-lg dark:bg-green-900 dark:text-green-300"
+                  >NumPy</span
+                >
+                <span
+                  class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-lg dark:bg-green-900 dark:text-green-300"
+                  >Matplotlib</span
+                >
+              </div>
+              <div class="flex gap-4 mt-auto">
+                <a
+                  href="https://github.com/Haell39/HR-Analytics"
+                  class="inline-flex items-center font-medium text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 transition-colors"
+                  target="_blank"
+                >
+                  Ver Código
+                </a>
+                <a
+                  href="https://github.com/Haell39/HR-Analytics/blob/main/Relatorio.md"
+                  class="inline-flex items-center font-medium text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 transition-colors"
+                  target="_blank"
+                >
+                  Ver Relatório
+                </a>
+              </div>
             </div>
           </div>
+          <!-- Projeto 4 -->
+          <div
+            class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 transition-all hover:scale-[1.02]"
+          >
+            <div class="flex flex-col h-full">
+              <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                HR Analytic
+              </h3>
+              <p class="text-gray-600 dark:text-gray-300 mb-4 flex-grow">
+                Predição de Rotatividade de Funcionários para Retenção
+                Estratégica. Base de dados de uma empresa multinacional.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <!-- Tags mantidas -->
+                <span
+                  class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-lg dark:bg-green-900 dark:text-green-300"
+                  >Python</span
+                >
+                <span
+                  class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-lg dark:bg-green-900 dark:text-green-300"
+                  >Pandas</span
+                >
+                <span
+                  class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-lg dark:bg-green-900 dark:text-green-300"
+                  >Scikit-learn</span
+                >
+                <span
+                  class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-lg dark:bg-green-900 dark:text-green-300"
+                  >NumPy</span
+                >
+                <span
+                  class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-lg dark:bg-green-900 dark:text-green-300"
+                  >Matplotlib</span
+                >
+              </div>
+              <div class="flex gap-4 mt-auto">
+                <a
+                  href="https://github.com/Haell39/HR-Analytics"
+                  class="inline-flex items-center font-medium text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 transition-colors"
+                  target="_blank"
+                >
+                  Ver Código
+                </a>
+                <a
+                  href="https://github.com/Haell39/HR-Analytics/blob/main/Relatorio.md"
+                  class="inline-flex items-center font-medium text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 transition-colors"
+                  target="_blank"
+                >
+                  Ver Relatório
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- End Grid -->
         </div>
       </div>
     </section>
 
     <!-- Impacto section 3° titulo -->
     <section id="impact" class="bg-white dark:bg-gray-900">
-      <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+      <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-12 lg:px-6">
         <div
           class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12"
         >
@@ -668,7 +717,7 @@
 
     <!-- Reconhecimento section 4° titulo -->
     <section id="awards" class="bg-white dark:bg-gray-900">
-      <div class="py-12 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-12">
+      <div class="py-6 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-12">
         <!-- Cabeçalho da seção -->
         <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16 mt-14">
           <h2
@@ -977,7 +1026,7 @@
 
     <!-- Contact Section 5° titulo -->
     <section id="contact" class="bg-white dark:bg-gray-900">
-      <div class="py px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-12">
+      <div class="py-6 px-4 mx-auto max-w-screen-xl lg:py-6 lg:px-12">
         <!-- Cabeçalho da seção -->
         <h2
           class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white"
