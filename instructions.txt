@@ -24,8 +24,3 @@ Incluir Google sites datastudent e expandir por aí, como se fosse um blog de co
 << OBS Seção projetos: Pesquisar onde deployar relatorios MD dos projetos de dados, onde deployar os visuais excels power bi sql etc...e tbm os visuais ipython
 
 
-<h2
-          class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white py-1"
-        >
-          🗂️ Meus Projetos
-        </h2>
