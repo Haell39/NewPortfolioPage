@@ -20,7 +20,6 @@
   </head>
   <body>
     <!-- Aqui fica a Navbar section -->
-    <!-- Tirar fixed e o-top deixar só stick dps se quiser-->
     <section>
       <nav
         class="sticky-top top-0 bg-white dark:bg-gray-900 fixed w-full border-b border-gray-200 dark:border-gray-600"
@@ -143,7 +142,7 @@
                 <a
                   href="#awards"
                   class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                  >Conquistas</a
+                  >Reconhecimento</a
                 >
               </li>
             </ul>
@@ -243,7 +242,7 @@
               <ul class="list-none space-y-2 text-gray-700 dark:text-gray-300">
                 <li class="flex items-center">
                   <span class="text-green-500 text-lg">🔹</span>
-                  <span class="ml-2">JavaScript</span>
+                  <span class="ml-2">HTML | CSS | JavaScript</span>
                 </li>
                 <li class="flex items-center">
                   <span class="text-green-500 text-lg">🔹</span>
@@ -480,7 +479,7 @@
         </div>
 
         <!-- Cabeçalho da seção -->
-        <!-- Depoimentos -->
+        <!-- Depoimento 1 -->
         <div class="mb-12">
           <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">
             📣 Propostas e Depoimentos
@@ -489,44 +488,36 @@
             <!-- Depoimento 1 -->
             <div class="bg-white rounded-lg shadow-md p-6 dark:bg-gray-800">
               <img
-                src="src/images/impact/impact1.jpg"
+                src="src\images\impact\dp7.png"
                 alt="Depoimento 1"
                 class="w-full max-w-xs mx-auto mb-4 rounded-lg object-cover"
               />
               <p class="text-gray-700 dark:text-gray-300 mb-4 italic">
-                "O DataStudent me ajudou a entender análise de dados de forma
-                prática e acessível!"
-              </p>
-              <p class="text-sm font-semibold text-gray-900 dark:text-white">
-                João Silva, Estudante de Dados
+                "Proposta de trabalho como programador"
               </p>
             </div>
+
+            <!-- Depoimento 2 -->
             <div class="bg-white rounded-lg shadow-md p-6 dark:bg-gray-800">
               <img
-                src="src/images/impact/impact1.jpg"
+                src="src\images\impact\dp6.jpg"
                 alt="Depoimento 1"
                 class="w-full max-w-xs mx-auto mb-4 rounded-lg object-cover"
               />
               <p class="text-gray-700 dark:text-gray-300 mb-4 italic">
-                "O DataStudent me ajudou a entender análise de dados de forma
-                prática e acessível!"
-              </p>
-              <p class="text-sm font-semibold text-gray-900 dark:text-white">
-                João Silva, Estudante de Dados
+                "Solicitação de ajuda para compreender programação e novas
+                tecnologias."
               </p>
             </div>
+            <!-- Depoimento 3 -->
             <div class="bg-white rounded-lg shadow-md p-6 dark:bg-gray-800">
               <img
-                src="src/images/impact/impact1.jpg"
+                src="src\images\impact\dp00.jpg"
                 alt="Depoimento 1"
                 class="w-full max-w-xs mx-auto mb-4 rounded-lg object-cover"
               />
               <p class="text-gray-700 dark:text-gray-300 mb-4 italic">
-                "O DataStudent me ajudou a entender análise de dados de forma
-                prática e acessível!"
-              </p>
-              <p class="text-sm font-semibold text-gray-900 dark:text-white">
-                João Silva, Estudante de Dados
+                "Proposta para colaboração em projeto!"
               </p>
             </div>
           </div>
@@ -590,23 +581,106 @@
           </div>
         </div>
       </div>
+
+      <!-- Graficos de Metricas -->
+      <style>
+        img {
+          transition: transform 0.3s ease; /* Transição suave ao aumentar/diminuir */
+          cursor: pointer; /* Mostra que a imagem é clicável */
+          width: 100%; /* Para ocupar o espaço do contêiner */
+          border-radius: 10px; /* Arredonda as bordas das imagens */
+        }
+
+        .enlarged {
+          transform: scale(1.5); /* Aumenta a imagem em 50% */
+        }
+      </style>
+
+      <section class="bg-white dark:bg-gray-900">
+        <div
+          class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-1 lg:px-6"
+        >
+          <!-- Primeira Imagem -->
+          <div>
+            <img
+              class="w-full dark:hidden enlargeable"
+              src="src\images\impact\graphA.png"
+              alt="graph 1 light mode"
+            />
+            <img
+              class="w-full hidden dark:block enlargeable"
+              src="src\images\impact\graphA.png"
+              alt="graph 1 dark mode"
+            />
+          </div>
+
+          <!-- Segunda Imagem -->
+          <div>
+            <img
+              class="w-full dark:hidden enlargeable"
+              src="src\images\impact\graphB.png"
+              alt="graph 3 light mode"
+            />
+            <img
+              class="w-full hidden dark:block enlargeable"
+              src="src\images\impact\graphB.png"
+              alt="graph 3 dark mode"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Script para aumentar imagem (1 de cada vez) e voltar ao normal ao clicar fora -->
+      <div>
+        <script>
+          let currentEnlarged = null;
+
+          // Função para aumentar/diminuir a imagem ao clicar nela
+          document.querySelectorAll(".enlargeable").forEach((img) => {
+            img.addEventListener("click", (event) => {
+              event.stopPropagation(); // Evita que o clique na imagem dispare o evento do document
+              if (img.classList.contains("enlarged")) {
+                // Se a imagem clicada já está aumentada, volta ao normal
+                img.classList.remove("enlarged");
+                currentEnlarged = null;
+              } else {
+                // Se outra imagem está aumentada, volta ao normal
+                if (currentEnlarged) {
+                  currentEnlarged.classList.remove("enlarged");
+                }
+                // Aumenta a imagem clicada
+                img.classList.add("enlarged");
+                currentEnlarged = img;
+              }
+            });
+          });
+
+          // Evento para voltar a imagem ao normal ao clicar fora
+          document.addEventListener("click", (event) => {
+            if (currentEnlarged && !currentEnlarged.contains(event.target)) {
+              currentEnlarged.classList.remove("enlarged");
+              currentEnlarged = null;
+            }
+          });
+        </script>
+      </div>
     </section>
 
     <!-- Reconhecimento section 4° titulo -->
     <section id="awards" class="bg-white dark:bg-gray-900">
-      <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-12">
+      <div class="py-12 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-12">
         <!-- Cabeçalho da seção -->
-        <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
+        <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16 mt-14">
           <h2
             class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
           >
-            🏆 Conquistas e Reconhecimentos
+            🏆 Reconhecimentos
           </h2>
           <p
             class="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400"
           >
             Certificados, reconhecimentos e estudos que demonstram minha
-            evolução em Ciência de Dados e Desenvolvimento Web.
+            evolução profissional e minha capacidade técnica.
           </p>
         </div>
 
@@ -617,7 +691,7 @@
             class="bg-gray-50 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
           >
             <a
-              href="LINK_DO_VALIDADOR_ONE"
+              href="https://cursos.alura.com.br/user/rafaelsantoshome"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -634,11 +708,11 @@
                 ONE - Oracle Next Education
               </h3>
               <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
-                Curso de formação em tecnologia com foco em desenvolvimento e
-                lógica de programação.
+                Fui selecionado para o programa ONE da Oracle em parceria com a
+                Alura.
               </p>
               <a
-                href="LINK_DO_VALIDADOR_ONE"
+                href="https://cursos.alura.com.br/user/rafaelsantoshome"
                 class="text-blue-600 hover:underline dark:text-blue-500 font-medium"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -648,54 +722,19 @@
             </div>
           </div>
 
-          <!-- Conquista 2: Enap -->
+          <!-- Conquista 2: EFSET -->
           <div
             class="bg-gray-50 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
           >
             <a
-              href="LINK_DO_VALIDADOR_ENAP"
+              href="https://cert.efset.org/SHZMoH"
               target="_blank"
               rel="noopener noreferrer"
             >
               <img
                 class="w-full rounded-t-lg object-cover h-48"
-                src="src/images/awards/enap_certificate.jpg"
+                src="src\images\certificados\efset.png"
                 alt="Certificado Enap"
-              />
-            </a>
-            <div class="p-5">
-              <h3
-                class="text-xl font-bold tracking-tight text-gray-900 dark:text-white"
-              >
-                Enap - EVG
-              </h3>
-              <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
-                Certificação em análise de dados e gestão pública. dddddddddd
-              </p>
-              <a
-                href="LINK_DO_VALIDADOR_ENAP"
-                class="text-blue-600 hover:underline dark:text-blue-500 font-medium"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Validar Certificado <i class="fa-solid fa-arrow-right ml-1"></i>
-              </a>
-            </div>
-          </div>
-
-          <!-- Conquista 3: EFSET -->
-          <div
-            class="bg-gray-50 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-          >
-            <a
-              href="LINK_DO_VALIDADOR_EFSET"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                class="w-full rounded-t-lg object-cover h-48"
-                src="src/images/awards/efset_certificate.jpg"
-                alt="Certificado EFSET"
               />
             </a>
             <div class="p-5">
@@ -705,7 +744,222 @@
                 EFSET - English Proficiency
               </h3>
               <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
-                Certificado de proficiência em inglês, nível avançado.
+                Concluí com sucesso o teste de ingles da EFSET, alcançando o
+                nível C2 Proficient.
+              </p>
+              <a
+                href="https://cert.efset.org/SHZMoH"
+                class="text-blue-600 hover:underline dark:text-blue-500 font-medium"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Validar Certificado <i class="fa-solid fa-arrow-right ml-1"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Conquista 3: Chesf -->
+          <div
+            class="bg-gray-50 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
+            <a
+              href="https://github.com/Haell39/Images-Icons/blob/main/images/photo_2024-12-25_02-22-44.jpg"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="w-full rounded-t-lg object-cover h-48"
+                src="src\images\certificados\chesf.png"
+                alt="Certificado Enap"
+              />
+            </a>
+            <div class="p-5">
+              <h3
+                class="text-xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Reconhecimento Chesf
+              </h3>
+              <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
+                Reconhecimento da Chesf pelo meu comprometimento e dedicação no
+                trabalho.
+              </p>
+              <a
+                href="https://github.com/Haell39/Images-Icons/blob/main/images/photo_2024-12-25_02-22-44.jpg"
+                class="text-blue-600 hover:underline dark:text-blue-500 font-medium"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Validar Certificado <i class="fa-solid fa-arrow-right ml-1"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Conquista 4: IBM -->
+          <div
+            class="bg-gray-50 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
+            <a
+              href="https://www.credly.com/badges/3133014a-f646-4fd6-9bf0-0b73cbaa070a/linked_in_profile"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="w-full rounded-t-lg object-cover h-48"
+                src="src\images\certificados\ibmweb.png"
+                alt="Certificado EFSET"
+              />
+            </a>
+            <div class="p-5">
+              <h3
+                class="text-xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                IBM Web Development
+              </h3>
+              <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
+                Badge oficial da IBM SkillsBuild em desenvolvimento web,
+                versionamento e testes.
+              </p>
+              <a
+                href="https://www.credly.com/badges/3133014a-f646-4fd6-9bf0-0b73cbaa070a/linked_in_profile"
+                class="text-blue-600 hover:underline dark:text-blue-500 font-medium"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Validar Certificado <i class="fa-solid fa-arrow-right ml-1"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Conquista 5: Enap dados -->
+          <div
+            class="bg-gray-50 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
+            <a
+              href="https://www.escolavirtual.gov.br/documentos/validacao/validar-documentos?comp_doc=+KAmM13988122oUfK"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="w-full rounded-t-lg object-cover h-48"
+                src="src\images\certificados\adados.png"
+                alt="Certificado EFSET"
+              />
+            </a>
+            <div class="p-5">
+              <h3
+                class="text-xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Análise de Dados - Enap
+              </h3>
+              <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
+                Análise de dados e pré-processamento até a análise descritiva e
+                o desenvolvimento de painéis de BI.
+              </p>
+              <a
+                href="https://www.escolavirtual.gov.br/documentos/validacao/validar-documentos?comp_doc=+KAmM13988122oUfK"
+                class="text-blue-600 hover:underline dark:text-blue-500 font-medium"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Validar Certificado <i class="fa-solid fa-arrow-right ml-1"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Conquista 6: ONE Web -->
+          <div
+            class="bg-gray-50 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
+            <a
+              href="https://cursos.alura.com.br/degree/certificate/c9c92691-265a-440f-bec8-cd9236ae89be?lang"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="w-full rounded-t-lg object-cover h-48"
+                src="src\images\certificados\alura2.png"
+                alt="Certificado EFSET"
+              />
+            </a>
+            <div class="p-5">
+              <h3
+                class="text-xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Programação Web - Oracle ONE
+              </h3>
+              <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
+                Lógica de programação + desenvolvimento web para criação de
+                páginas estruturadas e estilizadas.
+              </p>
+              <a
+                href="https://cursos.alura.com.br/degree/certificate/c9c92691-265a-440f-bec8-cd9236ae89be?lang"
+                class="text-blue-600 hover:underline dark:text-blue-500 font-medium"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Validar Certificado <i class="fa-solid fa-arrow-right ml-1"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Conquista 7: Estatística -->
+          <div
+            class="bg-gray-50 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
+            <a
+              href="https://ada.tech/certificado?code=0d69f303-5f43-ab55-0f28-9e5e8678bb9e"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="w-full rounded-t-lg object-cover h-48"
+                src="src\images\certificados\estatistica.png"
+                alt="Certificado EFSET"
+              />
+            </a>
+            <div class="p-5">
+              <h3
+                class="text-xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Estatística - Enap
+              </h3>
+              <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
+                Certificado em Estatística pela EVG(Enap), com ênfase em
+                Estatística Descritiva e Probabilidades.
+              </p>
+              <a
+                href="https://ada.tech/certificado?code=0d69f303-5f43-ab55-0f28-9e5e8678bb9e"
+                class="text-blue-600 hover:underline dark:text-blue-500 font-medium"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Validar Certificado <i class="fa-solid fa-arrow-right ml-1"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Conquista 8: Ada tech -->
+          <div
+            class="bg-gray-50 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
+            <a
+              href="https://ada.tech/certificado?code=0d69f303-5f43-ab55-0f28-9e5e8678bb9e"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="w-full rounded-t-lg object-cover h-48"
+                src="src\images\certificados\datasci.png"
+                alt="Certificado EFSET"
+              />
+            </a>
+            <div class="p-5">
+              <h3
+                class="text-xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Ada Tech - Trilha Data Science
+              </h3>
+              <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
+                Trilha Digital Coders 2024, pelo Santander e pela Ada Tech.
               </p>
               <a
                 href="LINK_DO_VALIDADOR_EFSET"
@@ -723,7 +977,7 @@
 
     <!-- Contact Section 5° titulo -->
     <section id="contact" class="bg-white dark:bg-gray-900">
-      <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-12">
+      <div class="py px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-12">
         <!-- Cabeçalho da seção -->
         <h2
           class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white"
@@ -744,7 +998,7 @@
             class="bg-gray-50 rounded-lg shadow p-6 text-center dark:bg-gray-800 dark:border-gray-700"
           >
             <a
-              href="SEU_LINK_LINKEDIN"
+              href="https://www.linkedin.com/in/rafaelsantoshome/"
               target="_blank"
               rel="noopener noreferrer"
               class="flex flex-col items-center"
